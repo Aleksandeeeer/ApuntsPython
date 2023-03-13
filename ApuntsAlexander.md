@@ -308,3 +308,248 @@ df = pd.DataFrame(llista_dades, columns=["temp","pres","data"])
 print(df)  
 df.to_csv("temperatures.csv",index=False, decimal=",")
 ```
+## Exercici 2 Pandas
+
+
+1)
+```python
+import pandas as pd  
+  
+df = pd.read_csv(r'C:\Users\Aleksander\Desktop\dataset_youtube.csv')  
+print(df)
+```
+
+2)
+El numero de files és 19128 i el numero de columnes és 25
+
+```python
+import pandas as pd  
+  
+df = pd.read_csv(r'C:\Users\Aleksander\Desktop\dataset_youtube.csv')  
+  
+files_total = len(df.axes[0])  
+columnes_total = len(df.axes[1])  
+  
+print(f"Numero de files {files_total}")  
+print(f"Numero de columnes {columnes_total}")
+```
+
+3)
+Fem servir el recurs utilitzat en el apartat anterior.
+
+```python
+import pandas as pd  
+  
+df = pd.read_csv(r'C:\Users\Aleksander\Desktop\dataset_youtube.csv')  
+  
+files_total = len(df.axes[0])  
+columnes_total = len(df.axes[1])  
+  
+Columnes = []  
+  
+for columnes in df.axes[1]:  
+    Columnes.append(columnes)  
+  
+print(Columnes)
+```
+
+4)
+Amb el seguent codi podem veure quines columnes contenen valors nuls i quants
+```python
+import pandas as pd  
+  
+df = pd.read_csv(r'C:\Users\Aleksander\Desktop\dataset_youtube.csv')  
+  
+nuls = df.isnull().sum()  
+  
+print(nuls)
+```
+
+Amb això podem observar com la columna "defaultlenguage" i "dislikecount" tenen tots els valors nuls, per tant aquestes dues columnes les hem d'eliminar. La columna "defaultAudioLenguage" té més de 16.000 valors nuls, per tant tampoc ens serveix. Thumbnailres té més de 1500 valors nuls pero aquesta es una columna que no ens interessa igualment. En canvi la columna de licensed content té més de 3000 nuls però si ens interessa. A la vegada també hi ha altres columnes amb un nombre de columnes molt reduit. Pero abans de netejar aquestes columnes decidirem quins columnes ens interessa mantenir. Així no fem esforços en va.
+
+Tot i això mirant la totalitat de l'exercici s'ha vist que les seguentes columnes no interessen, i per tant es procedeix a eliminar-les:
+
+position  
+publishedAt  
+publishedAtSQL  
+VideoDescription  
+tags  
+videocategoryLabel  
+duration  
+definition  
+caption  
+defaultLanguage  
+defaultAudioLanguage  
+thumbnail_maxres  
+licensedContent  
+dislikecount  
+favoritecount
+
+i alguns més
+
+```python
+import pandas as pd  
+  
+df = pd.read_csv(r'C:\Users\Aleksander\Desktop\dataset_youtube.csv')  
+  
+df.drop('position', inplace=True, axis=1)  
+df.drop('publishedAt', inplace=True, axis=1)  
+df.drop('publishedAtSQL', inplace=True, axis=1)  
+df.drop('videoDescription', inplace=True, axis=1)  
+df.drop('tags', inplace=True, axis=1)  
+df.drop('videoCategoryId', inplace=True, axis=1)  
+df.drop('videoCategoryLabel', inplace=True, axis=1)  
+df.drop('duration', inplace=True, axis=1)  
+df.drop('durationSec', inplace=True, axis=1)  
+df.drop('dimension', inplace=True, axis=1)  
+df.drop('definition', inplace=True, axis=1)  
+df.drop('caption', inplace=True, axis=1)  
+df.drop('defaultLanguage', inplace=True, axis=1)  
+df.drop('thumbnail_maxres', inplace=True, axis=1)  
+df.drop('licensedContent', inplace=True, axis=1)  
+df.drop('dislikeCount', inplace=True, axis=1)  
+df.drop('favoriteCount', inplace=True, axis=1)  
+df.drop('defaultLAudioLanguage', inplace=True, axis=1)  
+  
+hola = df.isnull().sum()  
+print(hola)
+```
+
+d'aquesta neteja ens queda el seguent:
+
+channelId        0
+channelTitle     0
+videoId          0
+videoTitle       0
+viewCount        0
+likeCount        5
+commentCount    14
+
+Habent de netejar el "likeCount" i el "commentCount". Al ser tant poques columnes s'ha optat per borrar directament les files on es troben els nuls.
+
+Afegint això al final ja tenim tota la taula neta
+
+```python
+df_net = df.dropna(how= 'any')  
+  
+hola = df_net.isnull().sum()  
+print(hola)
+```
+
+channelId       0
+channelTitle    0
+videoId         0
+videoTitle      0
+viewCount       0
+likeCount       0
+commentCount    0
+
+6)
+
+```python
+num_videos = df['channelId'].value_counts().rename('TotalVideos')  
+df_net = df_net.join(num_videos, on="channelId")  
+for i in df_net['channelTitle']:  
+    if i == i:  
+        break  
+for s in df_net['channelTitle']:  
+    if s != i:  
+        if s == s:  
+            break  
+  
+p = df_net.loc[df_net["channelTitle"] == i, "TotalVideos"].values[-1]  
+o = df_net.loc[df_net["channelTitle"] == s, "TotalVideos"].values[-1]  
+  
+print(f'El numero de videos del canal {i} és {p}')  
+print(f'El numero de videos del canal {s} és {o}')
+```
+
+7)
+mitjana de les visites, comentaris i likes
+
+```python
+sumavisitas1 = 0  
+iteracion = 0  
+for j in df_net['channelTitle']:  
+    if j == i:  
+        sumavisitas1 = sumavisitas1 + df_net['viewCount'][iteracion]  
+averagevisitas1= sumavisitas1/p  
+sumavisitas2 = 0  
+for y in df_net['channelTitle']:  
+    if y == s:  
+        sumavisitas2 = sumavisitas2 + df_net['viewCount'][iteracion]  
+averagevisitas2= sumavisitas2/o  
+  
+sumacomentaris1 = 0  
+for j in df_net['channelTitle']:  
+    if j == i:  
+        sumacomentaris1 = sumacomentaris1 + df_net['commentCount'][iteracion]  
+averagecomentaris1= sumacomentaris1/p  
+sumacomentaris2 = 0  
+for y in df_net['channelTitle']:  
+    if y == s:  
+        sumacomentaris2 = sumacomentaris2 + df_net['commentCount'][iteracion]  
+averagecomentaris2= sumacomentaris2/o  
+  
+sumalikes1 = 0  
+for j in df_net['channelTitle']:  
+    if j == i:  
+        sumalikes1 = sumalikes1 + df_net['likeCount'][iteracion]  
+averagelikes1= sumalikes1/p  
+sumalikes2 = 0  
+for y in df_net['channelTitle']:  
+    if y == s:  
+        sumalikes2 = sumalikes2 + df_net['likeCount'][iteracion]  
+averagelikes2= sumalikes2/o  
+  
+print(f"El canal {i} té de mitjana {round(averagevisitas1,2)} visites, {round(averagecomentaris1,2)} comentaris i {round(averagelikes1,2)} likes")  
+print(f"El canal {s} té de mitjana {round(averagevisitas2,2)} visites, {round(averagecomentaris2,2)} comentaris i {round(averagelikes2,2)} likes")
+```
+
+RESULTAT :
+El canal NPR Music té de mitjana 2004.13 visites, 11.0 comentaris i 147.94 likes
+El canal KEXP té de mitjana 2003.21 visites, 10.99 comentaris i 147.87 likes
+
+8)
+Desviació de cada video respecte la seva mitjana:
+```python
+for m in df_net['channelTitle']:  
+    ite = ite +1  
+    if m == i:  
+        desviacio = llist[ite]-averagevisitas1  
+        print(desviacio)  
+    else:  
+        desviacio = llist[ite]-averagevisitas2  
+        print(desviacio)
+```
+
+9)
+Video amb màximes visites del canal 1:
+```python
+canal_lista = list(df_net['channelTitle'])  
+title_lista = list(df_net['videoTitle'])  
+video_lista = list(df_net['viewCount'])  
+max1 = max(video_lista)  
+index = video_lista.index(max1)  
+titol = title_lista[index]  
+canal = canal_lista[index]  
+print(titol)  
+print(canal)
+```
+resultat:
+Dua Lipa: Tiny Desk (Home) Concert
+NPR Music
+
+Video amb màximes comentaris del canal:
+```python
+max2 = max(coment_lista)  
+index2 = coment_lista.index(max2)  
+titol2= title_lista[index2]  
+canal2= canal_lista[index2]  
+print(titol2)  
+print(canal2)
+```
+
+resultat:
+BTS: Tiny Desk (Home) Concert
+NPR Music
