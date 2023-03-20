@@ -553,3 +553,65 @@ print(canal2)
 resultat:
 BTS: Tiny Desk (Home) Concert
 NPR Music
+
+# Exercici Classe Dataset Twitch
+```python
+import pandas as pd
+import time
+
+#Columnes en el dataset
+
+inici = time.time()
+
+df = pd.read_csv("feb-full-2023.csv", sep'\t',nrows=25, usecols=["captured_at","streamer_name","viewer_count","game_name","stream_title"])
+#posant el nrows=2 fem que només es llegeixin les dues primers files del document. També hem posat que només llegeixi les seguents columnes. fent servir el usecols
+stream_mes_vist = df["viewer_count"].idmax()
+print(df["captured_at"].iloc[posicio],df["streamer_name"].iloc[posicio],df["stream_title"].iloc[posicio], df["viewer_count"].iloc[posicio])
+
+final = time.time()
+
+print(final-inici)
+```
+
+Que passa si volem crear un dataframe amb totes les dades d'un canal concret
+```python
+import pandas as pd
+import time
+
+#Columnes en el dataset
+
+inici = time.time()
+
+df = pd.read_csv("feb-full-2023.csv", sep'\t', usecols=["captured_at","streamer_name","viewer_count","game_name","stream_title"],)
+#posant el nrows=2 fem que només es llegeixin les dues primers files del document. També hem posat que només llegeixi les seguents columnes. fent servir el usecols
+stream_mes_vist = df["viewer_count"].idmax()
+print(df["captured_at"].iloc[posicio],df["streamer_name"].iloc[posicio],df["stream_title"].iloc[posicio], df["viewer_count"].iloc[posicio])
+
+dades_kings_league = df[df["streamer_name"] == "kingsleague"]
+dades_kings_league.to_csv("kingsleague.csv",index=False)
+
+final = time.time()
+
+print(final-inici)
+```
+Introduim els chunks
+```python
+```python
+import pandas as pd
+import time
+
+#Columnes en el dataset
+
+inici = time.time()
+
+df = pd.read_csv("feb-full-2023.csv", sep'\t', usecols=["captured_at","streamer_name","viewer_count","game_name","stream_title"],chunksize=1000000)
+llista_kings_league = []
+for chunk i df:
+	dades_kings_league = chunk[chunk["streamer_name"] == "kingsleague"]
+	llista_kings_league.append(dades_kings_league)
+
+final_frame = pd_concat(llista_kings_league)
+
+dades_kings_league.to_csv("kingsleague_v2.csv",index=False)
+```
+
