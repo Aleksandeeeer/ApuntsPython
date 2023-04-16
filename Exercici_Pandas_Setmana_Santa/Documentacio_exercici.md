@@ -18,3 +18,5 @@
 
 
 [![Grafic 7](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistribuciondelosStreamerssegnintervalos&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/DistribuciondelosStreamerssegnintervalos/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+
