@@ -21,6 +21,8 @@
 
 [![Grafic 8](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Distribucindelnumerodestreamerssegunlashoras&#47;Hoja1&#47;1_rss.png)](https://public.tableau.com/views/Distribucindelnumerodestreamerssegunlashoras/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+[![Grafic 9](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Stddelosespectadores&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Stddelosespectadores/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
 [![Grafic 10](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Stdsegunlahora&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Stdsegunlahora/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
 
