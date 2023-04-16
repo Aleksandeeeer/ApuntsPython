@@ -14,6 +14,8 @@ En el cas de el mínim és deu al fet de que a les 10 del matí els espanyols o 
 
 ### 2.- Quines son les categoríes més vistes?
 [![Grafic 2](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ju&#47;Juegosmsvistos&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Juegosmsvistos/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+La categoría més vista el més de febrer va ser "Just Chatting", qui estigui una mica familiratizat amb twitch sabrà que això es normal. El que no es tan normal es el fet de tenir en la posició 2 la categoria d'esports, ja que sol ser una categoria molt marginal. Aquesta posició tant elevada es deu a la kingsleague. Les categories que segueixen son clàssics de Twitch, com son Minecraft i League of legends, seguit per un joc molt potent aquests últims anys, Valorant.
  
 
 [![Grafic 3](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ju&#47;Juegosmsstreameados&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Evolucionespectadoresjuegos/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
