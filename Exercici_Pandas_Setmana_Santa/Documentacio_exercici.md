@@ -5,19 +5,14 @@
 ## Estudi realitzat mitjançant l'extracció de dades gràcies a python i el posterior tractament d'aquestes amb Tableau
 Aquest estudi compte amb les dades en idioma español, fet que significa que aquest analisis està orientat tant als streamers com a l'audiencia de parla hispana. Ara bé, tant la comunitat llatinoamericana com l'espanyola tenen unes diferencies significatives, sobretot en temes d'horaris i dates, cosa que serà observable en aquest estudi.
 
-### 1.- ¿Cuál ha sido la evolución de espectadores (captura a captura) durante el periodo?
-
-
-
-
-
-
-
-
+### 1.- Quina ha estat l'evolució d'espectadors (captura a captura) durant el periode?
 [![Grafic 1](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;EvolucinumerodespectadorsfebrerTwitch&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/EvolucinumerodespectadorsfebrerTwitch/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+Com podem veure en aquest gràfic hi ha un patró que es repeteix dia rere dia. Es molt interessant veure com cada dia hi ha 3 punts claus que es repeteixen. Un punt mínim que sol ser cap a les 10:00 del matí i després dos punts máxims, un sobre les 23:00 i l'altre sobre les 04:00 del matí. Hi ha una explicació ben senzilla per aquest punts claus així com el cicle. Els punts màxims corresponen primer al pic màxim d'espectadors d'espanya sobre les 23:00 i al pic màxim d'espectadors llatinoamericans sobre les 04:00 am. Durant aquests dos pics l'audiencia es manté alta degut a l'afluencia descendent espanyola així com ascendent llatinoamericana, una transició d'espectadors bastant constant.
 
+En el cas de el mínim és deu al fet de que a les 10 del matí els espanyols o estan a l'escola o treballant, en canvi els llatinoamericans acaben d'anar-se a dormir. Aquests dos fets fan que els espectadors estiguin en mínims.
 
+### 2.- Quines son les categoríes més vistes?
 [![Grafic 2](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ju&#47;Juegosmsvistos&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Juegosmsvistos/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
  
 
