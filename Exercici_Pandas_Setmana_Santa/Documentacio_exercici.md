@@ -1,12 +1,4 @@
-              
-
-```{js, embedcode, echo=FALSE}                    
-    
-    var divElement = document.getElementById('viz1681638766116');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1620px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1620px';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement); 
-
-```
+[Grafic 1](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;EvolucinumerodespectadorsfebrerTwitch&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/EvolucinumerodespectadorsfebrerTwitch/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
  
-```Python
-asdasdasdasdas
-```
+
 
