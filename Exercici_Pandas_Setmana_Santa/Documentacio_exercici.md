@@ -1,5 +1,5 @@
 ```diff
-! (Els gràfics no he pogut posar-los de forma interactiva dins del github però cada gràfic en cas de clicar-hi a sobre et porta al gràfic publicat a Tableau.)
+! Els gràfics no he pogut fer embed dins del github però cada gràfic en cas de clicar-hi et porta al gràfic publicat a Tableau.
 ```
 # Febrer a Twitch
 ## Estudi realitzat mitjançant l'extracció de dades gràcies a python i el posterior tractament d'aquestes amb Tableau
