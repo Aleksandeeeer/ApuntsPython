@@ -27,11 +27,11 @@ En quant al total d'hores streamejades de cada categoria veiem que la cosa està
 Gràcies a la gràfica de l'evolució dels espectadors per a cada cas particular podem confirmar i observar una série de coses:
 
    * La categoria "Just Chatting" és la més constant, així com la més potent, però no té els majors pics d'audiencia.
-   -La categoria de "League of Legends" és molt constant també, però amb números més baixos.
-   -La categoria de "Sports" té el pic més alt de tot el periode, coincidint amb diumenge, dia de partit a la Kingsleague. Tot i així la resta dels dies es troba en       el mínim del gràfic. Podent afirmar que es una categoria integrada pràcticament al 100% per la Kingsleague
-   -Valorant molt semblant a League of Legends pero amb menys espectadors
-   -El cas de Minecraft també és interessant ja que té una mitjana bastant bona però té dos pics clarament marcats. Probablement degut a la realització d'algun event      de minecraft entre streamers (solen ser bastant comuns)
-   -Hogwarts Legacy en compte és clarament diferent. Ja que comença en 0 viewers, primer tenim un pic (degut als streamers provant el joc en accés anticipat) i            finalment el pic més gran quan el joc surt a la venta. A partir d'aques pic és produeix una baixada paulatina que acaba desembocant a com havia començat, en            practicament 0.
+   * La categoria de "League of Legends" és molt constant també, però amb números més baixos.
+   * La categoria de "Sports" té el pic més alt de tot el periode, coincidint amb diumenge, dia de partit a la Kingsleague. Tot i així la resta dels dies es troba en       el mínim del gràfic. Podent afirmar que es una categoria integrada pràcticament al 100% per la Kingsleague
+   * Valorant molt semblant a League of Legends pero amb menys espectadors
+   * El cas de Minecraft també és interessant ja que té una mitjana bastant bona però té dos pics clarament marcats. Probablement degut a la realització d'algun event      de minecraft entre streamers (solen ser bastant comuns)
+   * Hogwarts Legacy en compte és clarament diferent. Ja que comença en 0 viewers, primer tenim un pic (degut als streamers provant el joc en accés anticipat) i            finalment el pic més gran quan el joc surt a la venta. A partir d'aques pic és produeix una baixada paulatina que acaba desembocant a com havia començat, en            practicament 0.
      
 [![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evolucioncantidaddestreamsdelosjuegosmsvistos&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Evolucioncantidaddestreamsdelosjuegosmsvistos/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
