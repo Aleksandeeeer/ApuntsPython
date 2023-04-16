@@ -25,6 +25,7 @@ En quant al total d'hores streamejades de cada categoria veiem que la cosa està
 [![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evolucionespectadoresjuegos&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Evolucionespectadoresjuegos/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
 Gràcies a la gràfica de l'evolució dels espectadors per a cada cas particular podem confirmar i observar una série de coses:
+
 +La categoria "Just Chatting" és la més constant, així com la més potent, però no té els majors pics d'audiencia.
 +La categoria de "League of Legends" és molt constant també, però amb números més baixos.
 +La categoria de "Sports" té el pic més alt de tot el periode, coincidint amb diumenge, dia de partit a la Kingsleague. Tot i així la resta dels dies es troba en       el mínim del gràfic. Podent afirmar que es una categoria integrada pràcticament al 100% per la Kingsleague
