@@ -35,6 +35,7 @@ Gràcies a la gràfica de l'evolució dels espectadors per a cada cas particular
      
 [![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evolucioncantidaddestreamsdelosjuegosmsvistos&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Evolucioncantidaddestreamsdelosjuegosmsvistos/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+En el cas de l'evolució del nombre de streams de cada categoria veiem que en tots els casos es super estable excepte en el Hogwarts Legacy que segueix un patró similar a la gràfica anterior.
 
 [![Grafic 6](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistribuciondelosStreamers&#47;Hoja1&#47;1_rss.png)](https://public.tableau.com/views/DistribuciondelosStreamers/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
