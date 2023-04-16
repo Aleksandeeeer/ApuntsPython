@@ -50,8 +50,13 @@ D'aquest altre gràfic podem veure com la gran majoria d'streams fa stream a una
 
 En el cas de les hores streamejades per cada streamer, passa una cosa semblant al gràfic anterior pero de menys hores a més. On la majoria són streamers que fan un número baix d'hores, baixant dràsticament el número d'streamers a mesura que pujen les hores.
 
+### 5.- Quina ha estat l'evolució de la desviació estàndard en el volum d'espectadors? En quins moments les audiencies es troben més polaritzades? I en quin moment la distribució és més uniforme?
 [![Grafic 9](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Stddelosespectadores&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Stddelosespectadores/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+Els pics de desviació observats en aquest gràfic coincideixen amb els diumenges de cada setmana. La meva hipòtesis esque aquesta variança es deu als pics repentins de la KingsLeague.
+
 [![Grafic 10](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Stdsegunlahora&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Stdsegunlahora/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+Entre setmana i concretament pel matí la desviació es més estable. En canvi per la tarda/vespre la desviació es torna molt més pronunciada.
 
 
