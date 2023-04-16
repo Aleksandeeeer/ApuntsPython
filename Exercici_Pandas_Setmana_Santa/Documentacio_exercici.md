@@ -10,3 +10,6 @@
 
 [![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evolucionespectadoresjuegos&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Evolucionespectadoresjuegos/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+
+[![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evolucioncantidaddestreamsdelosjuegosmsvistos&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Evolucioncantidaddestreamsdelosjuegosmsvistos/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
