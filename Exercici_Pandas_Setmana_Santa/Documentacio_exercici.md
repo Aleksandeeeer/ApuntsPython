@@ -37,12 +37,18 @@ Gràcies a la gràfica de l'evolució dels espectadors per a cada cas particular
 
 En el cas de l'evolució del nombre de streams de cada categoria veiem que en tots els casos es super estable excepte en el Hogwarts Legacy que segueix un patró similar a la gràfica anterior.
 
+### 4.- Quina és la distribució dels streamers si els classifiquem per volum d'audiència i hores fetes?
 [![Grafic 6](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistribuciondelosStreamers&#47;Hoja1&#47;1_rss.png)](https://public.tableau.com/views/DistribuciondelosStreamers/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+D'aquest primer gràfic podem veure els streamers més vistos i com es comparen en tamanya amb la resta. Sent el primer la Kingsleague seguida d'Ibai, Illojuan i Spreen.
 
 [![Grafic 7](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistribuciondelosStreamerssegnintervalos2&#47;Hoja1&#47;1_rss.png)](https://public.tableau.com/views/DistribuciondelosStreamerssegnintervalos2/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+D'aquest altre gràfic podem veure com la gran majoria d'streams fa stream a una audiència menor a 100 espectadors, i a mesura que aumentem el numero d'espectadors el volum d'streams baixa exponentment.
 
 [![Grafic 8](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Distribucindelnumerodestreamerssegunlashoras&#47;Hoja1&#47;1_rss.png)](https://public.tableau.com/views/Distribucindelnumerodestreamerssegunlashoras/Hoja1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+En el cas de les hores streamejades per cada streamer, passa una cosa semblant al gràfic anterior pero de menys hores a més. On la majoria són streamers que fan un número baix d'hores, baixant dràsticament el número d'streamers a mesura que pujen les hores.
 
 [![Grafic 9](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Stddelosespectadores&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Stddelosespectadores/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
