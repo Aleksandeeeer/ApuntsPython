@@ -1,6 +1,9 @@
+(Els gràfics no he pogut posar-los de forma interactiva dins del github però cada gràfic en cas de clicar-hi a sobre et porta al gràfic publicat a Tableau.)
 # Febrer a Twitch
 ## Estudi realitzat mitjançant l'extracció de dades gràcies a python i el posterior tractament d'aquestes amb Tableau
+Aquest estudi compte amb les dades en idioma español, fet que significa que aquest analisis està orientat tant als streamers com a l'audiencia de parla hispana. Ara bé, tant la comunitat llatinoamericana com l'espanyola tenen unes diferencies significatives, sobretot en temes d'horaris i dates, cosa que serà observable en aquest estudi.
 
+### 1.- ¿Cuál ha sido la evolución de espectadores (captura a captura) durante el periodo?
 
 
 
