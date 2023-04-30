@@ -615,3 +615,155 @@ final_frame = pd_concat(llista_kings_league)
 dades_kings_league.to_csv("kingsleague_v2.csv",index=False)
 ```
 
+#Exercici Exemple API Spotipy
+
+## Configuració inicial
+
+```python
+import spotipy  
+from spotipy.oauth2 import SpotifyClientCredentials  
+  
+SPOTIPY_CLIENT_ID='e69a700cb0704a578b2df0a2c884e7a8'  
+SPOTIPY_CLIENT_SECRET='da2ad366ad7b4b3c99b9b1d864f07744'  
+  
+auth_manager = SpotifyClientCredentials(SPOTIPY_CLIENT_ID,SPOTIPY_CLIENT_SECRET)  
+sp = spotipy.Spotify(auth_manager=auth_manager)  
+  
+playlists = sp.user_playlists('spotify')  
+while playlists:  
+    for i, playlist in enumerate(playlists['items']):  
+        print("%4d %s %s" % (i + 1 + playlists['offset'], playlist['uri'],  playlist['name']))  
+    if playlists['next']:  
+        playlists = sp.next(playlists)  
+    else:  
+        playlists = None
+```
+
+Codi per printar en pantalla tots els artistes dins una playlist
+
+Hem de guardar primer el json per veure el que conté:
+```python
+playlist_id = "2BBr6zeDlnvGwTvEHME6IC"
+
+query = sp.playlist_items(playlist_id, fields=None, limit=100, offset=0, market=None)
+
+with open("output_file.json", 'w', encoding='utf-8') as f:  
+    json.dump(query, f, ensure_ascii=False, indent=4)
+```
+
+```python
+playlist_id = "2BBr6zeDlnvGwTvEHME6IC"  
+  
+query = sp.playlist_items(playlist_id, fields=None, limit=100, offset=0, market=None)  
+  
+for i in query['items']:  
+    artists = i["track"]["artists"]  
+    for artist in artists:  
+        artist_name= artist["name"]  
+        artist_id = artist["id"]  
+        print(artist_name,artist_id)
+```
+
+Creació de dataset:
+
+```python
+import time  
+import pandas as pd  
+import spotipy  
+import json  
+from spotipy.oauth2 import SpotifyClientCredentials  
+  
+  
+SPOTIPY_CLIENT_ID='e69a700cb0704a578b2df0a2c884e7a8'  
+SPOTIPY_CLIENT_SECRET='da2ad366ad7b4b3c99b9b1d864f07744'  
+  
+auth_manager = SpotifyClientCredentials(SPOTIPY_CLIENT_ID,SPOTIPY_CLIENT_SECRET)  
+sp = spotipy.Spotify(auth_manager=auth_manager)  
+  
+playlist_id = "2BBr6zeDlnvGwTvEHME6IC"  
+  
+query = sp.playlist_items(playlist_id, fields=None, limit=100, offset=0, market=None)  
+  
+relacions = []  
+  
+for i in query['items']:  
+    artists = i["track"]["artists"]  
+    for artist in artists:  
+        source_artist_name= artist["name"]  
+        source_artist_id = artist["id"]  
+  
+        related_artists = sp.artist_related_artists(source_artist_id)  
+        time.sleep(0.2)  
+        relacionats = related_artists['artists']  
+        for l in relacionats:  
+            related_artists_name = l["name"]  
+            tupla = (source_artist_name, related_artists_name)  
+            relacions.append(tupla)  
+        print("estic dormint")  
+        time.sleep(0.2)  
+  
+df = pd.DataFrame.from_records(relacions, columns=['source', 'target'])  
+df.to_csv("dataset_spoti.csv", index=False)
+```
+
+# Exercici 2 entregable
+
+```python
+import json  
+import pandas as pd  
+import glob  
+  
+files = glob.glob('api_responses/*.json')  
+  
+llista_dfs = []  
+  
+for file in files:  
+    with open(file,encoding="utf-8") as jsonfile:  
+        dades = json.load(jsonfile)  
+        tweets = dades["data"]  
+  
+        for tweet in tweets:  
+            author_id = tweet["author_id"]  
+            text = tweet["text"]  
+  
+            users = dades["includes"]["users"]  
+            for user in users:  
+                if user["id"] == author_id:  
+                    user_name = user["username"]  
+                    followers = user["public_metric"]["followers_count"]  
+                    tweet_count = user["public_metric"]["tweet_count"]  
+  
+  
+            df = df.DataFrame({  
+                "user_id": author_id,  
+                "user_name": user_name,  
+                "followers": followers,  
+                "text": text,  
+            }, index=[0])  
+            print(df)  
+            llista_dfs.append(df)  
+df_final = pd.concat(llista_dfs)  
+df_final.to_csv("final.csv", index=False)
+```
+# Sessió 18/04
+
+Fem servir el mòdul "glob" per concatenar la lectura de diferents datasets:
+
+```python
+import pandas as pd  
+import glob  
+  
+datasets = glob.glob("datasets/twitch_*")  
+  
+  
+llista_streamers = ['auronplay', 'illojuan']  
+llista = []  
+  
+for data in datasets:  
+    df = pd.read_csv(data, sep="\t")  
+    for streamer in llista_streamers:  
+        df.loc[df['streamer_name'] == streamer]  
+        llista.append(df)  
+  
+df_final = pd.concat(llista)  
+df_final.to_csv(f"{streamer}-dataset.csv", index=False)
