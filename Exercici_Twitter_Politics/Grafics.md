@@ -16,12 +16,16 @@ Quan analitzem els usuaris més actius a l'hora de parlar i mencionar dels candi
 
 ## Quina és l'activitat de cada candidat als seus comptes oficials?
 
-
+En canvia l'hora d'analitzar els polítics més actius els resultats canvien dràsticament respecte el primer gràfic. Per exemple Ada Colau ni apareix al gràfic, indicant que no fa servir twitter de forma habitual, de fet el seu últim tuit és de març de 2021. El que si podem veure és com el candidat més actiu és Eva Parera amb molta diferència, seguida de Daniel Sirera i Basha Changue.
 
 [![Grafic 3](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Candidatsmsactius3&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Candidatsmsactius3/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+## Quins temes destaquen? 
+
+En el moment que analitzem els temes més recurrents a través dels hashtags 
 
 
 [![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temasmscomentados&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Temasmscomentados/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
 
-[![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosconmayorfollowers&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosconmayorfollowers/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+[![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosconmayorfollowers&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosconmayorfollowers/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
