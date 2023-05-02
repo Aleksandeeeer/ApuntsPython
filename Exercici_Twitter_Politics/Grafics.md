@@ -1,4 +1,8 @@
+# Analisis de dataset polític sobre candidats a l'alcaldia de Barcelona
 
+Aquest estudi es centrarà en analitzar les relacions y tendències observades en tuits on es mencionen qualsevol dels candidats polítics a l'alcaldia de barcelona.
+
+## 1.- Quin és el candidat més mencionat?
 
 [![Grafic 1](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;No&#47;Nombredemencionstotalspercandidats&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Nombredemencionstotalspercandidats/Dashboard1?:language=es-ES&:display_count=n&:origin=viz_share_link)
 
