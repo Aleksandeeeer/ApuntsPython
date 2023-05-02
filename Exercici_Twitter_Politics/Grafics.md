@@ -2,6 +2,8 @@
 
 Aquest estudi es centrarà en analitzar les relacions y tendències observades en tuits on es mencionen qualsevol dels candidats polítics a l'alcaldia de barcelona.
 
+## Tableau
+
 ## 1.- Quin és el candidat més mencionat?
 
 Aqui tenim un gràfic on visualment gràcies al tamany dels cercles podem observar quins son els candidats més mencionats. D'on podem observar que el candidat més nombrat és sense sorpreses l'actual alcaldessa: Ada Colau. Això era esperable pel fet de que al ser l'actual alcaldessa té molta més notorietat y actualitat. En segona i tercera posició estan Basha Changue i Daniel Sirera respectivament.
@@ -27,6 +29,8 @@ En el moment que analitzem els temes més recurrents a través dels hashtags ten
 
 [![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temasmscomentados&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Temasmscomentados/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+## Quins són els usuaris amb major número de seguidors?
 
+En aquest gràfic és facilment observable un patró. Tots els usuaris amb major número de seguidors són mitjans de notícies. Aquest fet era esperable, pero a la vegada és extrany no trobar ningún influencer o polític amb molts seguidors en el gràfic
 
 [![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosconmayorfollowers&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosconmayorfollowers/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
