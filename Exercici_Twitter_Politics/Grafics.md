@@ -1,3 +1,6 @@
+```diff
+! Els gràfics no he pogut fer embed dins del github però cada gràfic en cas de clicar-hi et porta al gràfic publicat a Tableau.
+```
 # Analisis de dataset polític sobre candidats a l'alcaldia de Barcelona
 
 Aquest estudi es centrarà en analitzar les relacions y tendències observades en tuits on es mencionen qualsevol dels candidats polítics a l'alcaldia de barcelona.
@@ -34,3 +37,7 @@ En el moment que analitzem els temes més recurrents a través dels hashtags ten
 En aquest gràfic és facilment observable un patró. Tots els usuaris amb major número de seguidors són mitjans de notícies. Aquest fet era esperable, pero a la vegada és extrany no trobar ningún influencer o polític amb molts seguidors en el gràfic
 
 [![Grafic 5](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosconmayorfollowers&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosconmayorfollowers/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+## Gephi
+
+
