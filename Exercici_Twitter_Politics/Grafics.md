@@ -40,5 +40,19 @@ En aquest gràfic és facilment observable un patró. Tots els usuaris amb major
 
 ## Gephi
 
+Ha arribat el moment d'emprar l'eina de Gephi per veure relacions y diferents mesures. En aquesta primera imatge, veiem les relacions de forma general. On podem veure els principals usuaris amb més mencions i com estan relacionats aquests entre ells i altres usuaris. Com hem pogut veure amb Tableau el principal anomenat és el compte de "WillyTolerdo" on tots els usuaris que básicament interactuen amb ell es troben en el mateix color blau. El segon més anomenat es "Froilannister".
+
 ![Gephi 1](https://user-images.githubusercontent.com/116373618/235784781-b18c827f-acc4-4cb2-9db1-afb56ca23a50.JPG)
+
+Tot i així ens interessa trobar als candidats i les seves relacions, és per això que mitjançant un fitre de PageRank podem veure els més importants treient les intereferències.
+
+![Gephi 2](https://user-images.githubusercontent.com/116373618/235785610-88fe49c1-e16e-4681-a5d7-12b23bbf9c96.JPG)
+
+I si agafem aquest grapho i mirem de més aprop veiem a candidats com Ada Colau relacionada amb algun mitjà i un compte anomenat "OnvasBarcelona", a Eva Parera parcialment relacionada amb Daniel Sirera. I a Basha Changue relacionada amb la Cup.!
+
+[Gephi 3](https://user-images.githubusercontent.com/116373618/235786737-4f0bffce-f57f-43e5-9948-792947bf1d43.JPG)
+![Gephi 4](https://user-images.githubusercontent.com/116373618/235786772-54f2da45-b993-444a-83ad-628030430313.JPG)
+
+## Conclusió
+
 
