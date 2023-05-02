@@ -22,7 +22,7 @@ En canvia l'hora d'analitzar els polítics més actius els resultats canvien dr�
 
 ## Quins temes destaquen? 
 
-En el moment que analitzem els temes més recurrents a través dels hashtags 
+En el moment que analitzem els temes més recurrents a través dels hashtags tenim un clar número 1 i un clar número 2. Sent el número 1 "URGENTE" i el número 2 "Barcelona". Habent de baixar fins a la cinquena posició 
 
 
 [![Grafic 4](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temasmscomentados&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Temasmscomentados/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
