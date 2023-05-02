@@ -10,8 +10,11 @@ Aqui tenim un gràfic on visualment gràcies al tamany dels cercles podem observ
 
 ## 2.- Quins son els usuaris més actius?
 
+Quan analitzem els usuaris més actius a l'hora de parlar i mencionar dels candidats tenim un particular en primera posició l'usuarI "Ander_the_table" amb una quantitat de 88 tuits sobre aquest tema. En canvi en segona posició tenim un mitjà de comunicació, "nació digital", així que és perfectament entendible els 72 tuits sobre els candidats. Tot i així no tornem a trobar un mitjà fins la posició 7, on trobem "elnacionalcat".
+
 [![Grafic 2](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosmsactivos_16830506749830&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosmsactivos_16830506749830/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
+##
 
 [![Grafic 3](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Candidatsmsactius3&#47;Dashboard2&#47;1_rss.png)](https://public.tableau.com/views/Candidatsmsactius3/Dashboard2?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
