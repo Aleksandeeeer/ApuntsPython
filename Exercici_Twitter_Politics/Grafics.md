@@ -8,7 +8,7 @@ Aqui tenim un gràfic on visualment gràcies al tamany dels cercles podem observ
 
 [![Grafic 1](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;No&#47;Nombredemencionstotalspercandidats&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Nombredemencionstotalspercandidats/Dashboard1?:language=es-ES&:display_count=n&:origin=viz_share_link)
 
-# 2.- Quins son els usuaris més actius?
+## 2.- Quins son els usuaris més actius?
 
 [![Grafic 2](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosmsactivos_16830506749830&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosmsactivos_16830506749830/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
