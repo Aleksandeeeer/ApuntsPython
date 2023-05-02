@@ -4,9 +4,11 @@ Aquest estudi es centrarà en analitzar les relacions y tendències observades e
 
 ## 1.- Quin és el candidat més mencionat?
 
+Aqui tenim un gràfic on visualment gràcies al tamany dels cercles podem observar quins son els candidats més mencionats. D'on podem observar que el candidat més nombrat és sense sorpreses l'actual alcaldessa: Ada Colau. Això era esperable pel fet de que al ser l'actual alcaldessa té molta més notorietat y actualitat. En segona i tercera posició estan Basha Changue i Daniel Sirera respectivament.
+
 [![Grafic 1](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;No&#47;Nombredemencionstotalspercandidats&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Nombredemencionstotalspercandidats/Dashboard1?:language=es-ES&:display_count=n&:origin=viz_share_link)
 
-Aqui tenim un gràfic on visualment gràcies al tamany dels cercles podem observar quins son els candidats més mencionats. D'on podem observar que el candidat més nombrat és sense sorpreses l'actual alcaldessa: Ada Colau. Això era esperable pel fet de que al ser l'actual alcaldessa té molta més notorietat y actualitat. En segona i tercera posició estan Basha Changue i Daniel Sirera respectivament
+# 2.- Quins son els usuaris més actius?
 
 [![Grafic 2](https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Us&#47;Usuariosmsactivos_16830506749830&#47;Dashboard1&#47;1_rss.png)](https://public.tableau.com/views/Usuariosmsactivos_16830506749830/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
