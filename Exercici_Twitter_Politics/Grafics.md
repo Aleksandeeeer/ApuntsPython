@@ -40,4 +40,5 @@ En aquest gràfic és facilment observable un patró. Tots els usuaris amb major
 
 ## Gephi
 
+![Gephi 1](https://user-images.githubusercontent.com/116373618/235784781-b18c827f-acc4-4cb2-9db1-afb56ca23a50.JPG)
 
