@@ -50,7 +50,7 @@ Tot i així ens interessa trobar als candidats i les seves relacions, és per ai
 
 I si agafem aquest grapho i mirem de més aprop veiem a candidats com Ada Colau relacionada amb algun mitjà i un compte anomenat "OnvasBarcelona", a Eva Parera parcialment relacionada amb Daniel Sirera. I a Basha Changue relacionada amb la Cup.!
 
-[Gephi 3](https://user-images.githubusercontent.com/116373618/235786737-4f0bffce-f57f-43e5-9948-792947bf1d43.JPG)
+![Gephi 3](https://user-images.githubusercontent.com/116373618/235786737-4f0bffce-f57f-43e5-9948-792947bf1d43.JPG)
 ![Gephi 4](https://user-images.githubusercontent.com/116373618/235786772-54f2da45-b993-444a-83ad-628030430313.JPG)
 
 ## Conclusió
