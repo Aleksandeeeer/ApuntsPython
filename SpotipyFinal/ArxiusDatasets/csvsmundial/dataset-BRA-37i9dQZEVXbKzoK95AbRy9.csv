@@ -1,0 +1,51 @@
+danceability,artist_name,song_id,track_name,key,energy,acousticness,duration_ms,loudness,speechiness,tempo
+0.691,AgroPlay,4uqJelb9THHmJ3OCohg4ZJ,Nosso Quadro,9,0.708,0.338,173698,-4.821,0.195,160.018
+0.771,Matuê,3ktTWpYdXrYApH54cBo4Ap,Conexões de Máfia (feat. Rich The Kid),6,0.577,0.393,221538,-6.944,0.0461,116.96
+0.625,Israel & Rodolffo,3PH1nUysW7ybo3Yu8sqlPN,Seu Brilho Sumiu - Ao Vivo,6,0.916,0.309,168840,-3.704,0.0461,153.664
+0.588,Simone Mendes,51pxwIxDVCbFHW8oyJFQXD,Erro Gostoso - Ao Vivo,6,0.893,0.176,178812,-2.743,0.0866,153.778
+0.67,Zé Neto & Cristiano,3mzbab4H0iZYkHggSEj0UX,Oi Balde - Ao Vivo,2,0.668,0.601,159158,-6.411,0.0459,107.995
+0.743,Marília Mendonça,2K9kZpwD2CzTa6iiSYYOoO,Leão,6,0.865,0.449,166775,-3.897,0.0315,129.999
+0.842,MC Caverinha,12YCtLHGk6tP6RbHDHflCs,Cartão Black,9,0.468,0.255,159973,-8.572,0.637,107.727
+0.605,KayBlack,2LTlykcdu0gwb7zcKneo2a,Melhor Só,5,0.386,0.272,229327,-9.965,0.166,142.133
+0.656,Guilherme & Benuto,0redQHBfejmPUhonR5ppGC,Duas Três,5,0.842,0.574,156942,-3.746,0.201,159.918
+0.418,Matheus & Kauan,4sqpSDnTrbS8v7RMNCUyqS,Não Vitalício (Nunca Mais) - Ao Vivo,1,0.925,0.396,169836,-2.941,0.385,71.49
+0.654,Israel & Rodolffo,0SCMVUZ21uYYB8cc0ScfbV,Bombonzinho - Ao Vivo,1,0.948,0.3,154702,-3.672,0.0548,158.054
+0.483,Henrique & Juliano,0JIYoXtJfORxI6gRpHv6ZW,Traumatizei - Ao Vivo Em Brasília,11,0.91,0.13,172005,-3.474,0.0845,166.057
+0.61,Hugo & Guilherme,7IPEkUJsnWYNyBkK2i2FPj,Mágica - Ao Vivo,11,0.818,0.469,171730,-5.202,0.0589,158.022
+0.921,KayBlack,5TtTijiNYtFc6ktQARjY30,Preferida,3,0.461,0.13,130375,-10.0,0.495,120.035
+0.568,Luan Pereira,3o4wcB1Y6xC62eF02n9RSZ,ELA PIROU NA DODGE RAM,4,0.661,0.309,179600,-3.148,0.232,85.402
+0.65,Clayton & Romário,0ZAL7RbP2FsM3rObV60o7T,Namorando Ou Não - Ao Vivo,0,0.677,0.643,168359,-4.081,0.0328,135.947
+0.636,Gustavo Mioto,4ASA1PZyWGbuc4d9N8OAcF,Eu Gosto Assim - Ao Vivo,0,0.909,0.149,148800,-3.685,0.0439,154.189
+0.691,Grupo Menos É Mais,4f0aDk7HX37SfzerfznYlr,Lapada Dela - Ao Vivo,4,0.752,0.708,159323,-6.796,0.157,167.073
+0.799,KayBlack,6hu4HvpNzrW2RIEEAZC3vD,Segredo,7,0.49,0.332,104145,-6.788,0.178,86.272
+0.732,WIU,7nFvKgVumc9FcU97zGjjei,Coração de Gelo,10,0.671,0.124,168000,-4.276,0.082,159.907
+0.652,MC PH,156LKAN2oh16qflL5oz4tO,Os Bico Tão Se Perguntando (Let’s Go 3),10,0.481,0.044,177552,-8.446,0.0779,173.555
+0.7,Gustavo Mioto,1nf1HJdTWXwf9XHQebGlOd,Quando Apaga A Luz - Ao Vivo,2,0.914,0.168,144298,-3.047,0.0539,149.918
+0.644,Henrique & Juliano,7CUQQLRMIeSfa4m2uQcRHp,Rancorosa - Ao Vivo Em Brasília,5,0.872,0.308,181458,-4.187,0.0563,142.02
+0.726,NATTAN,2BlFIe0712LBUtTHxbqjme,Love Gostosinho - Ao Vivo,7,0.814,0.503,164075,-3.853,0.031,141.934
+0.899,Veigh,5qOZbLAjBqInXwAECb9NRS,Clickbait,0,0.543,0.391,161344,-6.681,0.321,119.04
+0.532,MC Xenon,22sAwsBH0NoNJXnrBenQuO,Sem Aliança no Dedo,1,0.355,0.732,120461,-6.632,0.332,82.713
+0.68,Ana Castela,7sopDXkuzXtHt8AQpdBxmT,DONA DE MIM,1,0.793,0.437,145092,-4.726,0.234,167.922
+0.708,Gusttavo Lima,1L7hWEc3tVjvmbw48ShktM,Desejo Imortal (It Must Have Been Love),11,0.811,0.261,184128,-4.263,0.0296,139.973
+0.893,Naiara Azevedo,0KXdSF0Poa57KOepZ3hKrh,Palhaça - Ao Vivo,0,0.829,0.518,159530,-5.098,0.151,146.062
+0.879,Zé Felipe,7CJJ7JC3kj9XdweWTvfVhX,Vacilão,7,0.886,0.237,130403,-3.287,0.0508,125.973
+0.85,MC Rogerinho,7Ht57bh2FwiQLwRH9zqESG,085 - Ao Vivo,2,0.655,0.211,163584,-2.891,0.0298,106.031
+0.596,Maiara & Maraisa,5aqwwgL4XOv2YJYwLiqKOZ,A Culpa É Nossa - Ao Vivo,11,0.85,0.608,165000,-4.528,0.0523,138.057
+0.892,Belle Kaffer,77BR4gaUAp3p0uA8UL6HT9,Não Para,7,0.655,0.116,180923,-7.03,0.069,129.959
+0.509,Gusttavo Lima,51FFbyL0PjkYtjXJQP0JoP,Saudade da Minha Vida - Ao Vivo,8,0.935,0.108,194850,-3.627,0.0709,158.927
+0.38,Luan Santana,235CP5ItAYMS6usv3C8jkP,DEUS É MUITO BOM - Ao Vivo,0,0.719,0.291,174318,-4.687,0.033,132.585
+0.639,Juliette,3IyHot1hbizbIjvCkRrLHT,Bença,2,0.427,0.225,147811,-10.911,0.0297,156.004
+0.565,Matheus & Kauan,2M4kQD87lKnAS9vFlb4Bez,Pactos - Ao Vivo,1,0.889,0.582,183695,-2.976,0.0498,121.778
+0.727,MC Kevin o Chris,3khLpwuyIjEOw8vfJ1oUIT,Papin,5,0.786,0.491,122667,-5.755,0.291,134.571
+0.656,Wesley Safadão,5y7yYXNSsT89A27DQxbmUL,Covardia,8,0.913,0.215,150864,-3.316,0.0522,149.969
+0.77,MC Kevin o Chris,5WsM6qhZzRSD3oKbtorxzD,Aquecimento Senta Senta Suave,5,0.645,0.581,147383,-6.912,0.339,134.858
+0.629,Israel & Rodolffo,18yZLabAj1liqEUcgxDgeJ,Perdoou Nada - Ao Vivo,3,0.864,0.105,163120,-4.179,0.059,153.937
+0.633,Hugo & Guilherme,09pQ3lGyMTpW3rz7a71zwQ,Metade De Mim - Ao Vivo,0,0.862,0.297,160836,-5.206,0.0804,141.981
+0.846,Zé Felipe,2hkwwmmLC90T8BQ7t3xufq,Roça Em Mim,9,0.81,0.222,158171,-3.332,0.0867,135.074
+0.585,WIU,2orGm2E68ODFYOURjaES62,Felina,5,0.662,0.385,225882,-4.235,0.351,169.239
+0.446,Guilherme & Benuto,5AdPP30mjJCtBMyYKZUEU7,Assunto Delicado - Ao Vivo,4,0.941,0.411,180505,-4.134,0.378,75.104
+0.588,Grandão Vaqueiro,1M6rclDhYmqRBMFGNJOFKB,Americana Na Vaquejada,11,0.794,0.184,156330,-4.182,0.0399,139.903
+0.635,Henrique & Juliano,5yscNPMHmhqHQX9B9GFzMp,Te Esqueci Sem Querer - Ao Vivo Em Brasília,6,0.789,0.194,151093,-5.037,0.0365,106.12
+0.774,KayBlack,2tFmuYL5D8zqBHvs0nG5Tn,Bonjour,5,0.436,0.292,131927,-10.792,0.0842,131.068
+0.479,Zé Neto & Cristiano,4t6eam3rC9JoNFVkfOHK4s,Pátio do Posto - Ao Vivo,3,0.645,0.642,178548,-7.058,0.0425,139.32
+0.503,MC Cabelinho,7aOBf2xYbux3bo1fwISo6b,BEM MELHOR,10,0.587,0.613,317340,-5.429,0.381,70.944

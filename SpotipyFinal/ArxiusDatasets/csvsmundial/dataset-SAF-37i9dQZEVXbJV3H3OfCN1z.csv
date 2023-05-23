@@ -1,0 +1,51 @@
+danceability,artist_name,song_id,track_name,key,energy,acousticness,duration_ms,loudness,speechiness,tempo
+0.842,Tyler ICU,5tpft20jhQvRlG3O7XfwWy,"Mnike (feat. DJ Maphorisa, Nandipha808, Ceeka RSA & Tyron Dee)",1,0.504,0.0246,391888,-7.557,0.0534,112.995
+0.829,Lil Durk,6HgWWaMu31KdOpEG5l28BG,All My Life (feat. J. Cole),3,0.436,0.15,223204,-8.205,0.327,143.031
+0.813,Various Artists,4k5FlWz3dfhyQzmRpVPZsW,Hamba Juba,6,0.737,0.0146,480016,-7.439,0.0413,112.006
+0.63,Inkabi Zezwe,1bmZLmDu9jkzwHInzPsYLD,Umbayimbayi,11,0.628,0.431,230000,-7.019,0.0924,77.014
+0.799,2Point1,0AY3sNqV7qAdAZ8j6TRVBd,Stimela,8,0.622,0.00617,314342,-8.008,0.0677,113.002
+0.808,Uncle Waffles,2qp7rTcFVz67fz88JSnbkU,"Yahyuppiyah (feat. Pcee, EeQue & Chley)",1,0.244,0.00448,296975,-21.167,0.105,112.036
+0.875,Soa mattrix,1y5eHXBYiLgNv00KoHXm4o,Mina Nawe,5,0.871,0.0202,351641,-10.757,0.0458,112.006
+0.799,Rema,1s7oOCT8vauUh01PbJD6ps,Calm Down (with Selena Gomez),11,0.802,0.429,239318,-5.196,0.0371,107.008
+0.573,Libianca,26b3oVLrRUaaybJulow9kz,People,10,0.422,0.551,184791,-7.621,0.0678,124.357
+0.781,Shaunmusiq,1SB1UdyYs3DMyzHVxZg0QE,"Bhebha (feat. Myztro, Mellow & Sleazy, QuayR Musiq & Matuteboy)",2,0.592,0.00196,343147,-12.185,0.0384,114.011
+0.879,Tyler ICU,51fIDcNGiIp7pxHCCN5QaL,"NGIMOJA (feat. Khanyisa, Tumelo_za & Tyrondee)",4,0.315,0.00643,381769,-14.213,0.0975,111.99
+0.792,Ayra Starr,1xs8bOvm3IzEYmcLJVOc34,Rush,1,0.503,0.0369,185093,-8.044,0.0626,99.97
+0.875,Aymos,58u8z6ia8GTm9yZlkmtCtV,Fatela,1,0.36,0.0139,351451,-14.033,0.106,112.013
+0.828,Sam Deep,5SjrCoaMIUauMrOZG2CUnq,iMpumelelo,11,0.536,0.0113,378265,-13.356,0.0526,112.019
+0.676,Inkabi Zezwe,0KG5PG0nz6MmKLbDWtmpdk,Khaya Lami,4,0.459,0.396,255273,-8.84,0.0365,82.492
+0.847,Loatinover Pounds,3x3aen8g82ZErdMyGBuHNN,Sosh Plata - Remix,8,0.556,0.751,238033,-6.485,0.0572,121.989
+0.761,Mellow & Sleazy,3HCs7v1ac2ReqcUlTs7YVm,Kwelinye (feat. Keynote),1,0.656,0.00413,411451,-8.636,0.0526,111.988
+0.926,Mas Musiq,1CrwpdodnkXcjPSrg8kw9g,Gangnam Style (feat. DJ Maphorisa & Kabza De Small),2,0.733,0.0632,350310,-12.642,0.056,111.01
+0.807,Pcee,4aAxUQUNTtBhDgDcyCfXUu,"Kilimanjaro (feat. Justin99, Mema_Percent & Mr JazziQ)",5,0.474,0.00585,329073,-10.182,0.303,112.018
+0.879,Kelvin Momo,4FEi7i9oDxDzcYbx53IHwq,Sukakude,5,0.435,0.0551,413585,-17.619,0.0716,111.976
+0.684,Miguel,0JXXNGljqupsJaZsgSbMZV,Sure Thing,11,0.607,0.0267,195373,-8.127,0.1,81.001
+0.851,Murumba Pitch,4hDjmMljGvNZuYUXw1HWw3,Wena Dali,5,0.42,0.0943,368620,-11.515,0.0772,112.002
+0.594,Lwah Ndlunkulu,3Pv1NcASIE987vF8t1VWVu,Ngiyeza,2,0.496,0.634,281240,-8.685,0.07,139.909
+0.827,uLazi,37ISMEYWqhRHcPEitHn8Er,yey,10,0.48,0.208,381941,-14.666,0.0652,111.988
+0.823,Kali,7sliFe6W30tPBPh6dvZsIH,Area Codes,1,0.388,0.0187,139326,-10.867,0.491,154.569
+0.559,SZA,4iZ4pt7kvcaH6Yo8UoZ4s2,Snooze,5,0.551,0.141,201800,-7.231,0.132,143.008
+0.925,AKA,1nYOtsnFaAUQOZndulgzNb,Company,4,0.551,0.0522,244800,-9.907,0.23,100.027
+0.508,David Kushner,1odExI7RdWc4BT515LTAwj,Daylight,2,0.43,0.83,212954,-9.475,0.0335,130.09
+0.817,Drake,7aRCf5cLOFN1U7kvtChY1G,Search & Rescue,10,0.44,0.0603,272113,-8.482,0.0734,142.024
+0.38,Spirit Of Praise,7wcjeveluiW5djtxLCxNSx,Thath'Indawo (Live),0,0.646,0.555,473248,-8.379,0.0678,105.845
+0.795,DJ Maphorisa,4VrYIDyFUN4IYU3wtjbF8p,"Shona Kwelanga (feat. Mawhoo, Da Muziqal Chef & Kabza De Small)",1,0.824,0.00489,454319,-13.736,0.0686,112.004
+0.707,Miley Cyrus,4DHcnVTT87F0zZhRPYmZ3B,Flowers,0,0.681,0.0632,200455,-4.325,0.0668,117.999
+0.849,Myztro,26rx4ek7zk05Q9wEUbN1NF,"Myztro Ah Ah (feat. Xduppy, ShaunMusiQ & Ftears)",1,0.73,0.0433,336429,-7.375,0.0458,111.994
+0.715,Metro Boomin,2dHHgzDwk4BJdRwy9uXhTO,Creepin' (with The Weeknd & 21 Savage),1,0.62,0.417,221520,-6.005,0.0484,97.95
+0.795,Burna Boy,5YbPxJwPfrj7uswNwoF1pJ,Last Last,3,0.565,0.131,172342,-4.457,0.0948,87.925
+0.644,SZA,1Qrg8KqiBpW07V7PNxwwwL,Kill Bill,8,0.735,0.0521,153947,-5.747,0.0391,88.98
+0.694,Inkabi Zezwe,5S1axLTRin5cSVVle9bSbO,Intro (Inkabi Zezwe),5,0.729,0.108,220000,-6.789,0.13,127.475
+0.813,Mas Musiq,3PdO57q0KLWkfWXsXQJlV6,Sengizwile (feat. Aymos & Young Stunna),3,0.632,0.0283,420039,-9.723,0.0482,112.044
+0.733,Chris Brown,5IgjP7X4th6nMNDh4akUHb,Under The Influence,9,0.69,0.0635,184613,-5.529,0.0427,116.992
+0.463,Future,59nOXPmaKlBfGMDeOVGrIK,WAIT FOR U (feat. Drake & Tems),1,0.642,0.314,189893,-4.474,0.34,83.389
+0.846,Pcee,1vBqDhQhSlwr8rgIWTpCWT,Johnny ke Johnny (feat. Papi_SA),10,0.507,0.0874,323424,-12.392,0.0806,113.005
+0.851,Lil Yachty,7iTTWHbr4tAlsRJN4m4bay,Strike (Holster),1,0.642,0.0658,148115,-5.281,0.216,143.091
+0.762,MÖRDA,5U6zQqXCVZokE7UH4kdAB1,Mohigan Sun,9,0.68,0.0189,427160,-12.023,0.0787,117.989
+0.696,PinkPantheress,6AQbmUe0Qwf5PZnt4HmTXv,Boy's a Liar Pt. 2,5,0.809,0.252,131013,-8.254,0.05,132.962
+0.569,Fantasia,4iuNZTcvT9diFySSzVsnVS,When I See U,8,0.596,0.452,217347,-6.486,0.172,93.135
+0.767,AKA,2THbHmoRIjbGQgP0HylMbx,Lemons (Lemonade),0,0.525,0.0386,259592,-10.225,0.232,98.101
+0.69,J. Cole,68Dni7IE4VyPkTOH9mRWHr,No Role Modelz,10,0.521,0.324,292799,-8.492,0.339,100.028
+0.491,Lwah Ndlunkulu,2DTnuVhrGnLcmgutAW4vb1,Ithuba,0,0.547,0.678,263004,-8.162,0.129,112.197
+0.856,Murumba Pitch,1kKltSWkRUTB7LYVFJXS2w,Esangweni,6,0.569,0.0649,375324,-8.974,0.048,110.016
+0.797,K.O,65NAMIdsZkxYIM5ui8SJSw,SETE (feat. Young Stunna & Blxckie),4,0.627,0.183,249533,-7.096,0.0698,96.019

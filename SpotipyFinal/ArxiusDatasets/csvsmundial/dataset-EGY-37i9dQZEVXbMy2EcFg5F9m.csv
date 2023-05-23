@@ -1,0 +1,51 @@
+danceability,artist_name,song_id,track_name,key,energy,acousticness,duration_ms,loudness,speechiness,tempo
+0.671,Mohammed Saeed,0zzrAsIPYKENTWOwZqYjYp,Alo Aleky,7,0.41,0.921,178886,-8.192,0.183,165.955
+0.722,Ramy Sabry,4Guq7XrO1FjduwFBsVbr0E,يمكن خير,2,0.688,0.244,216357,-7.008,0.0267,104.999
+0.78,Wegz,5kdlxZ5skOYY3VK8RlfEIZ,البخت,3,0.59,0.487,206113,-7.77,0.132,104.977
+0.733,Essam Sasa,7qnR06N2Ekj9iBOQHiFqdq,مسا مني ليكوا,11,0.695,0.558,219813,-4.387,0.0474,106.883
+0.765,Muslim,10kAWGJi58siX7qOKFt2uY,Tab Aoulak - Karkouba,7,0.802,0.269,226763,-8.836,0.115,100.051
+0.775,Double Zuksh,5o7YSTsbNeo98lSacuNIi5,Salt El Zein - صلاة الزين,2,0.655,0.0384,156771,-4.017,0.0292,130.019
+0.579,Samar Tarik,21pRBYqcpAHzzyrSrX2HCb,Lw,7,0.262,0.865,201951,-12.373,0.0968,164.093
+0.792,Marwan Pablo,1SSymcmcSI1oYQtwOA8mOJ,LELLY YAH,10,0.661,0.163,189827,-6.059,0.0813,119.976
+0.918,Mohamed Ramadan,2FtwA6cVlrYeJzN8lCiwHS,Come Baby Come,6,0.865,0.121,145487,-6.734,0.112,113.047
+0.813,Karim Osama,3kvFynFheCVVecaJLKketl,Nazlet Seman,1,0.456,0.742,168006,-8.388,0.0665,110.02
+0.393,Muslim - مُسلِم,68WRDAU8QecpIyasp2BEby,Aleb Fel Dafater,3,0.5,0.53,306362,-9.22,0.14,81.882
+0.685,Various Artists,6J2LvJwmgpauEsaY6h06fW,Freedom Music: Scene Cypher 3,9,0.448,0.34,244865,-10.786,0.427,148.021
+0.794,Bahaa Sultan,1VfR7wqvEB9vQZrpizMRmf,Beraha Ya Sheekha,1,0.748,0.226,179526,-5.787,0.031,110.001
+0.784,Muhab,61krPxyIuTV8tpzMxHEWJh,Rehla,1,0.347,0.602,224006,-14.885,0.203,105.003
+0.733,Abo El Anwar,6Uig1yLkQkBZoHGDyZrTzm,Blanco,10,0.721,0.342,146571,-10.242,0.412,144.97
+0.74,Cairokee,4vIbws1xp082bv0zl8vLaJ,Basrah w Atooh,3,0.507,0.373,237832,-8.764,0.118,103.993
+0.447,Afroto,00TO3hVgOAgfKrRjrKEZxx,7ALA,6,0.54,0.578,181311,-12.572,0.0446,97.747
+0.686,Farid,0SbObewB36qKLWcaxMntej,بأمارة مين,0,0.66,0.47,195882,-5.947,0.0291,135.984
+0.755,Wegz,2BHxg3zP8IdRvvWPVavzqB,Amira,6,0.594,0.12,269231,-7.316,0.0422,117.948
+0.816,Ahmed Saad,2HbrI0oakRE7qNXoK74zNR,El Youm El Helw Dah,5,0.669,0.126,172233,-5.336,0.0576,120.021
+0.68,Cairokee,6CU68VwcV10VfulVQMfj3X,Ana Negm,6,0.487,0.767,241852,-9.639,0.0415,91.966
+0.449,Muhab,19QZmE8ctW3y569h1TkL5W,Amar,2,0.438,0.76,192006,-12.048,0.0872,127.875
+0.738,FL EX,6gg53gW5wlz0jSQmOcqIfY,MESAMA3EEN,4,0.705,0.481,180426,-9.055,0.213,140.957
+0.7,Ahmed Saad,6v9noMonS9GMI3Yx9CsSmF,Ya 3araf,2,0.813,0.0979,280000,-5.175,0.0506,92.998
+0.444,Muslim - مُسلِم,5hiQSNo6jQbQ2m2gBZs7bU,Etnaset,1,0.5,0.804,195598,-7.706,0.0666,147.757
+0.621,Maha Ftouni,5DWgoXhsm5LjfyERSbaqzO,El Sabr Gamel -الصبر جميل,2,0.532,0.762,299431,-7.639,0.0459,143.948
+0.651,Wael Jassar,0TnD2vJ9M91YXbBQqhK8lU,Zrouf Mandany,2,0.69,0.0417,245819,-6.675,0.0368,127.997
+0.579,Essam Sasa,0PTlHYXWyCeayIw3Tpafdl,عره فافي عامل مغامر - بت انتي حب حياتي,0,0.9,0.435,216816,-2.534,0.158,186.088
+0.793,3enba,1jcvOCkdQNmj8YxgcPdv59,On Fire,4,0.816,0.187,158669,-3.134,0.263,98.92
+0.566,Muslim - مُسلِم,3g4p8OgtpxHpEHzEjnRo6J,Mesh Nadman,10,0.332,0.769,175911,-11.366,0.0658,88.957
+0.599,Ahmed Kamel,0Oz1kaka4qeWhjntOZTRFv,Baad El Kalam,1,0.428,0.486,232500,-8.555,0.17,80.026
+0.805,Essam Sasa,3FdV0iO6fskyPeYnrMsKPM,وسط دموع وجراح,11,0.78,0.498,264197,-3.463,0.0764,109.984
+0.689,Essam Sasa,7ydZcXrYQhW0YRGsH7zgJr,اه يا بخته اللي يزاملني ( روح بقلبك مش بجسمك ),9,0.906,0.484,244950,-1.916,0.0886,98.007
+0.438,Muslim - مُسلِم,6382iMgZk6yyPg3htCkpB5,Abl Mawsalek,4,0.323,0.749,278000,-10.903,0.0406,115.627
+0.675,Essam Sasa,6kQSn6wpNfhi6okDREctqv,يلا ندي للي باعنا بوسة,8,0.861,0.505,182400,-2.482,0.105,99.954
+0.741,Mohamed Mounir,0Kb87SCKl8pFyKm0yD9TYf,لِلّي,7,0.819,0.104,163122,-5.189,0.0708,92.332
+0.802,Hamo ElTikha,0nkJCooURSEVpWFpeYOzeI,حمرا,7,0.627,0.431,218407,-4.374,0.339,139.805
+0.947,Afroto,6cpTq72SH9QSocMTnGEKg5,Brazil,9,0.732,0.15,212000,-5.764,0.355,120.083
+0.572,Ahmed Saad,0xIbsBFRTZoNfg54EAYHoN,Ana Qader From Gafar El Omda Series,2,0.914,0.271,186947,-3.244,0.267,94.608
+0.671,Mohammed Saeed,49odA1EtwSkPefTEeIwqBx,Konty 2olely,5,0.248,0.936,168695,-14.674,0.143,140.033
+0.658,Ahmed Saad,2IhPJapsl9WFLBFNhWZp7q,Ader Akmel,10,0.339,0.496,253385,-10.672,0.091,129.886
+0.365,Zap Tharwat,20MpmTGEcFIfMxxqobnxnl,Ghasb Anny,6,0.421,0.36,264110,-10.082,0.0655,179.516
+0.769,Wegz,2FntmtxOqyNgZkxaZchEn0,سكرتي,2,0.503,0.647,210893,-10.117,0.348,140.094
+0.763,Bahaa Sultan,3LXPZvEHf0vhgFKs4giHSS,Ta3ala Adalla3ak,10,0.863,0.651,211452,-4.395,0.0451,123.911
+0.643,Mohammed Saeed,7d3jR3zhKm8i7aPQcxjiVB,W El 7al Eh,6,0.269,0.918,179285,-12.285,0.184,166.081
+0.738,Afroto,4eEqANCoWtjcegFNqnV3nq,BAHZ,6,0.591,0.366,179137,-5.944,0.529,143.417
+0.84,Marwan Moussa,4U7uW9KlqalDKu8ff9OyDm,Aloomek,6,0.327,0.651,306790,-11.83,0.306,137.96
+0.695,Ahmed Saad,5kQCI3faUHASM28R91ksUY,Aleky Eyoun,10,0.391,0.734,209851,-9.77,0.0441,117.948
+0.683,Marwan Pablo,6EImClnQDWI51GJjSKva6P,EL HALAL,11,0.816,0.0113,230208,-5.178,0.0425,121.001
+0.85,Wegz,02G9n2WgsNd2j7CqTmcDR2,عفاريت الأسفلت,10,0.528,0.505,204818,-8.646,0.267,143.066
