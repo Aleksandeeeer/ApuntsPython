@@ -122,10 +122,58 @@ Tenim tots els dataframes en una llista, però ara ens fa falta concatenar aques
     <span style="color: #f8f8f2">dataset</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(f</span><span style="color: #e6db74">&quot;dataset-{pais}-{list}.csv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
 </pre></div>
 		<p>Concatenem aquesta llista en la variable dataset i exportem aquest dataset en un csv de nom igual al json previament generat, amb el nom del païs i el id de la playlist. Això ens dona 35 csvs individuals per cada païs, els quals el seguent pas serà ajuntar tots aquests csvs en un csv global. </p>
+		<h2>Merging CSVS</h2>
+		<p>Per concatenar tots aquests datasets generats necessitarem un nou mòdul, la biblioteca anomenada "glob". I la ja coneguda "pandas"</p>
+		<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">glob</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
+</pre></div>
+		<p>És important tenir tots els arxius csv en la mateixa carpeta, ja que mitjançant la nomenclatura podrem accedir a tots aquests arxius sense haver d'anomenar-los individualment.</p>
+		<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">file_list</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">glob</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">glob(</span><span style="color: #e6db74">&quot;*.csv&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">df_concatenated</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame()</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">file</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">file_list:</span>
+    <span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">read_csv(file)</span>
+    <span style="color: #f8f8f2">df_concatenated</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">concat([df_concatenated,</span> <span style="color: #f8f8f2">df])</span>
+</pre></div>
+		<p>Fent servir el la funció del glob.glob llegim i emmagatzamem en una llista tots els datasets amb format csv del directori. A continuació creem un Dataframe buit on emmagatzarem els datasets concatenats i iterem sobre cada arxiu de la llista de datasets creada anteriorment.
+
+Bàsicament llegim el csv, l'assignem a una variable i anem concatenant cada arxiu al dataframe buit previament creat. I finalmente creem un nou csv on tenim tot merged.
+</p>
+		<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">df_concatenated</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;concatenated_file_totjunt.csv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
+</pre></div>
+		<p>Tot aquest codi es pot consultar en el seguent arxiu python: https://github.com/Aleksandeeeer/ApuntsPython/blob/main/SpotipyFinal/main.py </p>
 	<!-- Fi Fragment de codi -->
-    <h2>Esto es otro subtitulo</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <!-- Ejemplo de codigo de Grafico incrustado-->
+    <h2>Europa i mundial</h2>
+    <p>Tots aquests passos es van realitzar primerament amb uns 20 països europeus, generant un dataset idèntic al dataset concatenat mundial pero amb europa. I aquest procés de merging es va emprar entre aquests dos datasets generals generant un dataset total Europa+Mundial. Per tant podem dir que tenim un dataset Europeu, un dataset fora d'europa i un dataset Mundial. On el dataset mundial comprèn un total de 57 països.</p>
+	<h2>Grapho amb Gephi</h2>
+	<p>Un cop generat tot això ja esmentat vam decidir generar un dataset especial per poder tractar amb gephi i generar un grapho de relacions entre països i artistes.</p>
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
+
+<span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">read_csv(</span><span style="color: #e6db74">&quot;concatenated_file_mundial.csv&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">graph</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">item,</span> <span style="color: #f8f8f2">row</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">iterrows():</span>
+    <span style="color: #f8f8f2">source</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">row[</span><span style="color: #e6db74">&quot;artist_name&quot;</span><span style="color: #f8f8f2">]</span>
+    <span style="color: #f8f8f2">target</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">row[</span><span style="color: #e6db74">&quot;pais&quot;</span><span style="color: #f8f8f2">]</span>
+    <span style="color: #f8f8f2">tupla</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(source,</span> <span style="color: #f8f8f2">target)</span>
+    <span style="color: #f8f8f2">graph</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(tupla)</span>
+</pre></div>
+	<p>Agafem el csv general i el convertim en un dataframe, creem una llista buida per emmagatzemar les tuples resultants i iterem sobre les files del dataframe.
+
+Agafem les dues variables de "artist_name" i "pais" i les assignem a les variables de "source" i "target" respectivament. Seguidament creem una tupla amb aquestes dues variables i les anem afegint a la llista de tuples.</p>
+	<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">final</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame(graph,</span> <span style="color: #f8f8f2">columns</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;source&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;target&quot;</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">final</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;grapho_mundial.csv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">False)</span>
+</pre></div>
+	<p>El pas final serà convertir en un dataset aquesta llista de tuples i exportar-ho en un csv. Igual que hem fet amb els anteriors datasets generem un dataset per Europa, un per fora d'Europa i un mundial.
+
+Tot aquest codi es accessible aqui: https://github.com/Aleksandeeeer/ApuntsPython/blob/main/SpotipyFinal/graphgephi.py
+</p>
+	<h2>Datasets</h2>
+	<p>Tots els datasets son accessibles en el seguent repositori de github: https://github.com/Aleksandeeeer/ApuntsPython/tree/main/SpotipyFinal
+</p>
+	<!-- Ejemplo de codigo de Grafico incrustado-->
     <div class='tableauPlaceholder' id='viz1681300013018' style='position: relative'><noscript><a href='#'><img alt='Prmedio de streamers por dia ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;promstreamersdia&#47;Prmediodestreamerspordia&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='promstreamersdia&#47;Prmediodestreamerspordia' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;promstreamersdia&#47;Prmediodestreamerspordia&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1681300013018');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                        
