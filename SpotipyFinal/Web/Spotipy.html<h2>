@@ -231,6 +231,11 @@ Un cop preparat el dataset l'hem analitzat amb Gephi. Hem combinat diferents dis
 	<h2>Qui és el cantant amb més connexions?</h2>
 	<p>L'artista amb més connexions és Miley Cyrus, amb un total de 32 connexions. Té la canço més escoltada en el que portem de 2023 (Flowers) i va treure un àlbum al març. </p>
 	
+	<h2>Quina és la comunitat més aïllada?</h2>
+	<p>La comunitat més aïllada la formen els països castellanoparlants. Mostrada amb el color blau, és la comunitat que més destaca. Els països comparteixen gran quantitats d'artistes que no apareixen a cap zona més. <br>Per exemple, els següents artistes apareixen a tots els països del grup blau: Yandel, Manuel Turizo, Eladio Carrión, Ozuna, Feid, Karol G, Yng Lucas, Eslabón Armado, Grupo Frontera i Shakira</p>
+	
+	<h2>Quina és la comunitat més central?</h2>
+	<p>El gràfic mostra clarament una comunitat lila al centre. Aquesta comunitat és la de països de parla anglesa, i està connectada amb tota la resta de comunitats. <br>La componen països com Malàisia, Estats Units o Suïssa. Tot i estar dins la mateixa comunitat, els països estan situats a prop dels seus territoris veïns. Per exemple, Suïssa està a prop d'Àustria i Alemanya (grisos); Malàisia toca amb la comunitat asiàtica (verd); i USA connecta amb Mèxic i els països castellano-parlants.</p>
             <footer>
 			<hr>
 			<p>
