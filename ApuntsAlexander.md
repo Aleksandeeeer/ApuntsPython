@@ -767,3 +767,253 @@ for data in datasets:
   
 df_final = pd.concat(llista)  
 df_final.to_csv(f"{streamer}-dataset.csv", index=False)
+```
+#Exercici 15/04
+
+```python
+import pandas as pd  
+  
+"""Amb el seguent codi fem una lectura preliminar del csv per saber els noms de les columnes i quines hi ha"""  
+df = pd.read_csv(r'feb_23.csv', nrows=25)  
+  
+Columnes=[]  
+  
+for columnes in df.axes[1]:  
+Columnes.append(columnes)  
+  
+print(Columnes[0])
+```
+
+captured_at	 
+streamer_name	
+streamer_id,	  position	
+viewer_count
+game_name
+game_id
+
+```python
+import pandas as pd  
+  
+df= pd.read_csv("feb_23.csv", sep='\t', usecols=["captured_at", "viewer_count"])  
+  
+viewers=df.groupby("captured_at")["viewer_count"].sum().tolist()  
+hora=df["captured_at"].unique().tolist()  
+  
+  
+data = {'captura': hora, 'viewers': viewers}  
+  
+junto = zip(data["viewers"],data["captura"])  
+ex = []  
+  
+for i in junto:  
+ex.append(i)  
+  
+  
+df1 = pd.DataFrame(ex, columns=['viewers','captura'])  
+print(df1)  
+  
+df1.to_csv('exercici1.csv')  
+  
+  
+# Print the result DataFrame
+```
+
+```python
+import pandas as pd  
+  
+  
+chunksize = 20000  
+df = pd.read_csv("feb_23.csv", sep='\t', usecols=["game_name", "viewer_count"], chunksize=chunksize)  
+result = []  
+result_count = []  
+  
+for chunk in df:  
+viewers = chunk.groupby("game_name")["viewer_count"].sum().reset_index()  
+counts = (chunk["game_name"].value_counts() / 4).reset_index()  
+result.append(viewers)  
+result_count.append(counts)  
+  
+result_count2 = pd.concat(result_count, axis=0, ignore_index=True)  
+df = pd.concat(result, axis=0, ignore_index=True)  
+  
+result_unique = result_count2.drop_duplicates(subset='game_name').copy() # Make a copy of the subset of data  
+  
+# Groupby 'Name' and sum the values in the column 'Age', then merge with 'df_unique' on 'Name'  
+result_unique = pd.merge(result_unique, df.groupby('game_name')['viewer_count'].sum().reset_index(), on='game_name')  
+  
+# Rename the summed column to 'Sum_Age'  
+result_unique = result_unique.rename(columns={'hores_x': 'viewer_count', 'hores_y': 'viewer_count'})  
+  
+# Drop the original 'Age' column  
+result_unique = result_unique.drop('viewer_count', axis=1)  
+  
+result_sorted = result_unique.sort_values('game_name')  
+  
+print(result_sorted)  
+  
+  
+  
+  
+"""  
+  
+df_unique = df.drop_duplicates(subset='game_name').copy() # Make a copy of the subset of data  
+  
+# Groupby 'Name' and sum the values in the column 'Age', then merge with 'df_unique' on 'Name'  
+df_unique = pd.merge(df_unique, df.groupby('game_name')['viewer_count'].sum().reset_index(), on='game_name')  
+  
+# Rename the summed column to 'Sum_Age'  
+df_unique = df_unique.rename(columns={'viewer_count_x': 'viewer_count', 'viewer_count_y': 'viewer_count'})  
+  
+# Drop the original 'Age' column  
+df_unique = df_unique.drop('viewer_count', axis=1)  
+  
+df_sorted = df_unique.sort_values('game_name')  
+  
+print(df_sorted)  
+  
+  
+  
+# Extraer la columna "viewer_count" como una lista  
+viewer_count_list = df["viewer_count"].tolist()  
+result_count2['viewers'] = viewer_count_list  
+  
+print(result_count2)  
+result_count2.to_csv('exercici2.csv')"""
+```
+
+BUENO
+```python
+import pandas as pd  
+  
+  
+chunksize = 20000  
+df = pd.read_csv("feb_23.csv", sep='\t', usecols=["game_name", "viewer_count"], chunksize=chunksize)  
+result = []  
+result_count = []  
+  
+for chunk in df:  
+viewers = chunk.groupby("game_name")["viewer_count"].sum().reset_index()  
+counts = (chunk["game_name"].value_counts() / 4).reset_index()  
+result.append(viewers)  
+result_count.append(counts)  
+  
+result_count2 = pd.concat(result_count, axis=0, ignore_index=True)  
+df = pd.concat(result, axis=0, ignore_index=True)  
+  
+df_sorted = df.sort_values('game_name')  
+print(df_sorted)  
+  
+df_grouped = df_sorted.groupby('game_name').sum().reset_index()  
+  
+df_grouped = df_grouped.rename(columns={'viewer_count': 'suma_viewers'})  
+print(df_grouped)  
+  
+print(result_count2)
+```
+
+EXERCICI 2 FINAL
+```python
+import pandas as pd  
+  
+  
+chunksize = 20000  
+df = pd.read_csv("feb_23.csv", sep='\t', usecols=["game_name", "viewer_count"], chunksize=chunksize)  
+result = []  
+result_count = []  
+  
+for chunk in df:  
+viewers = chunk.groupby("game_name")["viewer_count"].sum().reset_index()  
+counts = (chunk["game_name"].value_counts() / 4).reset_index()  
+result.append(viewers)  
+result_count.append(counts)  
+  
+result_count2 = pd.concat(result_count, axis=0, ignore_index=True)  
+df = pd.concat(result, axis=0, ignore_index=True)  
+  
+df_sorted = df.sort_values('game_name')  
+  
+df_grouped = df_sorted.groupby('game_name').sum().reset_index()  
+  
+df_grouped = df_grouped.rename(columns={'viewer_count': 'suma_viewers'})  
+  
+result_count2_grouped = result_count2.groupby('game_name')['count'].sum().reset_index()  
+  
+result_count2_grouped = result_count2_grouped.rename(columns={'count': 'hores'})  
+  
+  
+column_to_add = df_grouped['suma_viewers']  
+  
+  
+# Add the extracted column to df2  
+result_count2_grouped['viewers'] = column_to_add  
+  
+print(result_count2_grouped)  
+  
+result_count2_grouped.to_csv("exercici2.csv")
+```
+
+Exercici 4 FINAL
+
+```python
+import pandas as pd  
+  
+  
+chunksize = 20000  
+df = pd.read_csv("feb_23.csv", sep='\t', usecols=["streamer_name", "viewer_count"], chunksize=chunksize)  
+result = []  
+result_count = []  
+  
+for chunk in df:  
+viewers = chunk.groupby("streamer_name")["viewer_count"].sum().reset_index()  
+counts = (chunk["streamer_name"].value_counts() / 4).reset_index()  
+result.append(viewers)  
+result_count.append(counts)  
+  
+result_count2 = pd.concat(result_count, axis=0, ignore_index=True)  
+df = pd.concat(result, axis=0, ignore_index=True)  
+  
+df_sorted = df.sort_values('streamer_name')  
+  
+df_grouped = df_sorted.groupby('streamer_name').sum().reset_index()  
+  
+df_grouped = df_grouped.rename(columns={'viewer_count': 'suma_viewers'})  
+  
+result_count2_grouped = result_count2.groupby('streamer_name')['count'].sum().reset_index()  
+  
+result_count2_grouped = result_count2_grouped.rename(columns={'count': 'hores'})  
+  
+column_to_add = df_grouped['suma_viewers']  
+  
+# Add the extracted column to df2  
+result_count2_grouped['viewers'] = column_to_add  
+  
+print(result_count2_grouped)  
+  
+result_count2_grouped.to_csv("exercici4.csv")
+```
+
+Exercici 5
+```python
+import pandas as pd  
+  
+df= pd.read_csv("feb_23.csv", sep='\t', usecols=["captured_at", "viewer_count"])  
+  
+viewers=df.groupby("captured_at")["viewer_count"].sum().tolist()  
+hora=df["captured_at"].unique().tolist()  
+  
+  
+data = {'captura': hora, 'viewers': viewers}  
+  
+junto = zip(data["viewers"],data["captura"])  
+ex = []  
+  
+for i in junto:  
+ex.append(i)  
+  
+  
+df1 = pd.DataFrame(ex, columns=['viewers','captura'])  
+df1['std_viewers'] = df.groupby("captured_at")["viewer_count"].std().round(2).tolist()  
+  
+print(df1)  
+  
+df1.to_csv('exercici5.csv')
