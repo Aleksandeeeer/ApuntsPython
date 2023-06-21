@@ -1017,3 +1017,199 @@ df1['std_viewers'] = df.groupby("captured_at")["viewer_count"].std().round(2).to
 print(df1)  
   
 df1.to_csv('exercici5.csv')
+
+# Treball Final
+
+El procés d'obtenció de dades sha realitzat mitjançant l'accés a l'api de desenvolupador de Spotify a través d'un codi de python. El primer pas realitzat per aquesta recolecció de dades es crear una aplicació d'Spotify Dev per poder accedir a l'api. Aquesta aplicació genera un Client ID i un Client Secret, dos claus que introduirem al python y mitjançant diferents mòduls utilitzarem per extreure informació de l'api d'Spotify.
+
+# FOTO RECORTES
+
+## Mòduls
+
+Un cop tenim aquestes credencials ja podem començar amb el arxiu de python. Comencem instalant i important els mòduls que necessitarem per l'extracció.
+
+```python
+import spotipy
+import json
+from spotipy.oauth2 import SpotifyClientCredentials
+import time
+import pandas as pd
+```
+
+El primer de tots es la biblioteca de "spotipy", biblioteca de lliure accés creada per Paul Lamere pensada per manipular la api d'Spotify. També farem servir la biblioteca de "json", bàsicament per tenir accés i visualitzar arxius json, que serà el tipo d'arxiu que extraurem de la api. El tercer as preparatori es importar l'intèrpret de les credencials d'Spotify desde el propi mòdul d'Spotipy.
+Importem també el mòdul "time" per afegir un temps de pausa a les peticions, en motiu d'evitar el bloqueig per sobresaturació de la api. I per acabar importem el mòdul "pandas" que emprarem per traballar amb datasets i dataframes.
+
+## Preparació
+
+Comencem assignant les dues credencials a dues variables internes. I amb aquestes dues variables i l'ajuda del "SpotifyClientCredentials" aconseguim el "auth_manager".  I mitjançant aquest objecte auth_manager per l'autentificació aconseguim accés a Spotify amb el modul d'Spotipy assignant aquest modul com a "sp".
+
+```python
+SPOTIPY_CLIENT_ID = '89f634cbfb22458fbd2b396dd25496ee'
+SPOTIPY_CLIENT_SECRET = 'f266a68c3f5f4fc6901091f6f7fb553e'
+
+auth_manager = SpotifyClientCredentials(SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET)
+sp = spotipy.Spotify(auth_manager=auth_manager)
+
+playlist_ids = ["37i9dQZEVXbO839WGRmpu1", "37i9dQZEVXbKPTKrnFPD0G", "37i9dQZEVXbK4fwx2r07XW", "37i9dQZEVXbKzoK95AbRy9", "37i9dQZEVXbMda2apknTqH", "37i9dQZEVXbLJ0paT1JkgZ", "37i9dQZEVXbL1Fl8vdBUba", "37i9dQZEVXbJZGli0rRP3r", "37i9dQZEVXbIZQf3WEYSut", "37i9dQZEVXbJPVQvqZqpcM", "37i9dQZEVXbMy2EcFg5F9m", "37i9dQZEVXbLp5XoPON0wI", "37i9dQZEVXbJVKdmjH0pON", "37i9dQZEVXbJHSzlHx2ZJU", "37i9dQZEVXbMdvweCgpBAe", "37i9dQZEVXbMWDif5SCBJq", "37i9dQZEVXbIZK8aUquyx8", "37i9dQZEVXbJ5J1TrbkAF9", "37i9dQZEVXbKqiTGXuCOsB", "37i9dQZEVXbLeBcWrdps2V", "37i9dQZEVXbMPoK06pe7d6", "37i9dQZEVXbKcS4rq3mEhp", "37i9dQZEVXbNM8vS9cIqAG", "37i9dQZEVXbKUoIkUXteF6", "37i9dQZEVXbLw80jjcctV1", "37i9dQZEVXbIWlLQoMVEFp", "37i9dQZEVXbNy9tB5elXf1", "37i9dQZEVXbNSiWnkYnziz", "37i9dQZEVXbMGcjiWgg253", "37i9dQZEVXbN66FupT0MuX", "37i9dQZEVXbJV3H3OfCN1z", "37i9dQZEVXbJ7qiJCES5cj", "37i9dQZEVXbMVY2FDHm6NN", "37i9dQZEVXbNvXzC8A6ysJ", "37i9dQZEVXbKZyn1mKjmIl"]
+paises = ["SAU", "ARG", "AUS", "BRA", "CAN", "CHI", "COL", "KOR", "EAU", "ECU", "EGY", "USA", "PHI", "GUA", "HKG", "IND", "IDN", "ISR", "JAP", "KAZ", "DOM", "MAL", "MAR", "MEX", "NIG", "NZE", "PAK", "PAN", "PER", "SGP", "SAF", "THA", "TWN", "VEN", "VNM"]
+```
+
+Un cop tenim accés a l'Api procedim a manualment agafar els id de les playlist que ens interessen. En aquest cas totes les playlists del TOP 50 cançons de cada païs. En aquest codi d'exemple hi ha 35 països fora d'Europa, ja que els països europeus s'han extret amb un codi idèntic però generant un dataset només europeu. Al mateix temps que recolectem les id de les playlist en un altre llista i en el mateix ordre afegim el codi de tres lletres per a cada païs. Hem decidit fer servir aquest codi ja que d'aquesta manera Tableau reconeix els països i pots fer infografies de mapas.
+
+## Iteració i recolecció
+
+Gràcies a la documentació d'spotipy així com a l'analisi d'un json de prova vam poder arribar a veure com accedir a les dades que ens interessaven així com quina era la nomenclatura adequada per accedir-hi. Un cop fet aquests passos previs es moment d'aconseguir les dades definitives. 
+
+Comencem iterant sobre les llistes d'identificadors de playlists i països simultaneament. Aconseguim una llista on cada element de la llista està comprès per l'identificador de la playlist i el codi del seu païs.
+
+```python
+for list, pais in zip(playlist_ids, paises):
+    query = sp.playlist_items(list, fields=None, limit=100, offset=0, market=None)
+
+    with open(f"{pais}-{list}.json", 'w', encoding='utf-8') as f:
+        json.dump(query, f, ensure_ascii=False, indent=4)
+```
+
+I a la variable query li assignem tots els items de la playlist fent servir la playlist ID de cada païs. Per tant per a cada iteració "query" conté tots els items de cada un dels països. Per tant ens interessa generar un json per a cada païs. Per tant creem un json de nom el païs més la playlist ID. I en aques json aboquem tota la query pertanyent a aquell païs.
+
+Ja hem establert que la query conté els elements d'una playlist. Així que és moment d'extreure aquells elements d'items que ens interessin. Primer creem una llista per volcar les mesures de cada cançó i iterem sobre "items" de "query". Que bàsicament es iterar sobre cada cançó de la playlist, per tant "i" és cada cançó.
+
+```python
+for i in query['items']:
+        song_id = i["track"]["id"]
+        track_name = i["track"]["name"]
+        features = sp.audio_features(song_id)
+        artists_name = i["track"]["album"]["artists"]
+        cantants = []
+```
+
+En aquesta primera iteració obtenim uns paràmetres claus. Aconseguim el "ID" de la cançó, el nom de la cançó, el nom de l'artista d'aquesta canço i introduim en una llista tots els "audio_features". Finalment creem una llista buida per als cantants, ja que a la variable d'artists_name i ha més d'un artista en molts casos, i només ens interessa assignar un artista a cada cançó.
+
+```python
+for artist in artists_name:
+            a = artist["name"]
+            cantants.append(a)
+```
+
+És per això que tornem a iterar sobre la llista "artists_name" i afegim en una llista tots els cantants per separats. Fet que farà que més endavant poguem escollir quin d'aquests cantants volem assignar a cada cançó.
+
+```python
+for element in features:
+            dance = element["danceability"]
+            energy = element["energy"]
+            key = element["key"]
+            acousticness = element["acousticness"]
+            duration_ms = element["duration_ms"]
+            loudness = element["loudness"]
+            speechiness = element["speechiness"]
+            tempo = element["tempo"]
+```
+
+## Generar Dataset
+
+A continuació iterem sobre la llista de les "audiofeatures" i a cada element d'aquesta llista li assignem la variable corresponent al seu nom. Les audio_features preseleccionades per aquest estudi son: "danceability", "energy", "key", "acousticness", "duration_ms", "loudness", "speechiness" i "tempo". A les quals les assignem a variables homònimes, que farem servir per introduir totes aquestes mesures i les anteriors en un dataframe.
+
+```python
+ df = pd.DataFrame({
+                "danceability": [dance],
+                "artist_name": [cantants[0]],
+                "song_id": [song_id],
+                "track_name": [track_name],
+                "key": [key],
+                "energy": [energy],
+                "acousticness": [acousticness],
+                "duration_ms": [duration_ms],
+                "loudness": [loudness],
+                "speechiness": [speechiness],
+                "tempo": [tempo]
+            })
+```
+
+Finalment creem el daframe fent servir totes les "audio_features" esmentades més el "song_id", "track_name" i el primer artista de la llista d'artistes de la cançó.
+
+```python
+		llista.append(df)
+    time.sleep(0.2)
+```
+
+Un cop tenim el dataframe l'afegim a la llista, on s'aniràn afegint els dataframes de cada cançó a mesura que avançi la iteració. La iteració de "query""items" la tanquem amb un time sleep de 0.2 segons per no saturar la api.
+
+Tenim tots els dataframes en una llista, però ara ens fa falta concatenar aquesta llista per aconseguir un dataset utilitzable.
+
+```python
+ dataset = pd.concat(llista)
+    print(dataset)
+    dataset.to_csv(f"dataset-{pais}-{list}.csv", index=False)
+```
+
+Concatenem aquesta llista en la variable dataset i exportem aquest dataset en un csv de nom igual al json previament generat, amb el nom del païs i el id de la playlist. Això ens dona 35 csvs individuals per cada païs, els quals el seguent pas serà ajuntar tots aquests csvs en un csv global. 
+
+## Merging CSVS
+
+Per concatenar tots aquests datasets generats necessitarem un nou mòdul, la biblioteca anomenada "glob". I la ja coneguda "pandas"
+
+```python
+import glob
+import pandas as pd
+```
+
+És important tenir tots els arxius csv en la mateixa carpeta, ja que mitjançant la nomenclatura podrem accedir a tots aquests arxius sense haver d'anomenar-los individualment.
+
+```python
+file_list = glob.glob("*.csv")
+
+df_concatenated = pd.DataFrame()
+
+for file in file_list:
+    df = pd.read_csv(file)
+    df_concatenated = pd.concat([df_concatenated, df])
+```
+
+Fent servir el la funció del glob.glob llegim i emmagatzamem en una llista tots els datasets amb format csv del directori. A continuació creem un Dataframe buit on emmagatzarem els datasets concatenats i iterem sobre cada arxiu de la llista de datasets creada anteriorment.
+
+Bàsicament llegim el csv, l'assignem a una variable i anem concatenant cada arxiu al dataframe buit previament creat. I finalmente creem un nou csv on tenim tot merged.
+
+```python
+df_concatenated.to_csv("concatenated_file_totjunt.csv", index=False)
+```
+
+Tot aquest codi es pot consultar en el seguent arxiu python: https://github.com/Aleksandeeeer/ApuntsPython/blob/main/SpotipyFinal/main.py 
+
+## Europa i mundial
+
+Tots aquests passos es van realitzar primerament amb uns 20 països europeus, generant un dataset idèntic al dataset concatenat mundial pero amb europa. I aquest procés de merging es va emprar entre aquests dos datasets generals generant un dataset total Europa+Mundial. Per tant podem dir que tenim un dataset Europeu, un dataset fora d'europa i un dataset Mundial. On el dataset mundial comprèn un total de 57 països.
+
+## Grapho amb Gephi
+
+Un cop generat tot això ja esmentat vam decidir generar un dataset especial per poder tractar amb gephi i generar un grapho de relacions entre països i artistes.
+
+```python
+import pandas as pd
+
+df = pd.read_csv("concatenated_file_mundial.csv")
+
+graph = []
+
+for item, row in df.iterrows():
+    source = row["artist_name"]
+    target = row["pais"]
+    tupla = (source, target)
+    graph.append(tupla)
+```
+
+Agafem el csv general i el convertim en un dataframe, creem una llista buida per emmagatzemar les tuples resultants i iterem sobre les files del dataframe.
+
+Agafem les dues variables de "artist_name" i "pais" i les assignem a les variables de "source" i "target" respectivament. Seguidament creem una tupla amb aquestes dues variables i les anem afegint a la llista de tuples.
+
+```python
+final = pd.DataFrame(graph, columns= ["source", "target"])
+final.to_csv("grapho_mundial.csv", index= False)
+```
+
+El pas final serà convertir en un dataset aquesta llista de tuples i exportar-ho en un csv. Igual que hem fet amb els anteriors datasets generem un dataset per Europa, un per fora d'Europa i un mundial.
+
+Tot aquest codi es accessible aqui: https://github.com/Aleksandeeeer/ApuntsPython/blob/main/SpotipyFinal/graphgephi.py
+
+## Datasets
+
+Tots els datasets son accessibles en el seguent repositori de github: https://github.com/Aleksandeeeer/ApuntsPython/tree/main/SpotipyFinal
